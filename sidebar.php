@@ -1,5 +1,17 @@
-<div id="ttr_sidebar">
-<img id="img-logo" src="wp-content/themes/themamourotrousse/assets/img/laat-logo_beige.svg">
-<ul > <?php wp_list_cats('sort_column=namonthly'); ?> </ul>
+<?php
+/**
+ * The sidebar containing the main widget area
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package themamourotrousse
+ */
 
-</div>
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	return;
+}
+?>
+
+<aside id="secondary" class="widget-area">
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+</aside><!-- #secondary -->

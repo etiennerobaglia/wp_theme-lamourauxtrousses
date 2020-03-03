@@ -983,3 +983,167 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/* ----------------- THEMAMOUROTROUSSE ---------------- */
+
+/* Body fix */
+body {
+    margin: 0;
+}
+
+/* Header - frise */
+#masthead {
+    background-image: url("./img/laat-frise_m.svg");
+    background-color: white;
+    padding: 7.5vh;
+    background-size: auto 100%;
+}
+
+/* Sidebar */
+#secondary {
+    padding: 2.3% 4%;
+    background-color: #EA5155;
+    margin-top: 0.20rem;
+    border-top-left-radius: 15vw 0.6vw;
+	border-top-right-radius: 10vw 0.3vw;
+	max-width: 22vw;
+}
+#img-logo{
+    width: 14vw;
+    height: auto;
+}
+#secondary ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+} 
+#secondary li {
+    padding: 4.6vh 0 0 0;
+    text-align: center;
+}
+#secondary a {
+    color: white;
+    text-decoration: none;
+    font-family: Myriad Pro Semibold;
+    font-size: 1rem;
+}
+
+/* main: sidebar+footer */
+#content{
+    display: flex;
+    /* height: 85vh; */
+}
+
+/* page content */
+#primary {
+    display: flex;
+    padding: 1rem;
+}
+#primary * {
+    color:#EA5155;
+}
+h, h1, h2, h3, h4 {
+    font-family: Myriad Pro Semibold;
+}
+h, h1 {
+    font-size: 1.8333rem;
+}
+p{
+    font-family: Myriad Pro Light;
+}
+/* footer */
+#colophon
+{
+    width: 100%;
+    border-top: 1px #a2a2a2 solid;
+    text-align: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px)
+{
+    #secondary{
+        display: none;
+    }
+}
+
+/* font-face */
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('MYRIADPRO-REGULAR.woff') format('woff');
+    }
+    
+    
+@font-face {
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed'), url('MYRIADPRO-COND.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Myriad Pro Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed Italic'), url('MYRIADPRO-CONDIT.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Light'), url('MyriadPro-Light.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Semibold'), url('MYRIADPRO-SEMIBOLD.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Semibold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Semibold Italic'), url('MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Condensed'), url('MYRIADPRO-BOLDCOND.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('MYRIADPRO-BOLD.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Italic'), url('MYRIADPRO-BOLDIT.woff') format('woff');
+    }
+
+
+@font-face {
+    font-family: 'Myriad Pro Bold Condensed Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold Condensed Italic'), url('MYRIADPRO-BOLDCONDIT.woff') format('woff');
+    }

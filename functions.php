@@ -7,6 +7,32 @@
  * @package themamourotrousse
  */
 
+function capitaine_register_post_types() {
+	
+    // CPT Portfolio
+    $labels = array(
+        'name' => 'Trousses',
+        'all_items' => 'Tous les produits',  // affiché dans le sous menu
+        'singular_name' => 'Produits',
+        'add_new_item' => 'Ajouter un produit',
+        'edit_item' => 'Modifier un produit',
+        'menu_name' => 'Trousses'
+    );
+
+	$args = array(
+        'labels' => $labels,
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'supports' => array( 'title', 'editor','thumbnail' ),
+        'menu_position' => 5, 
+        'menu_icon' => 'dashicons-admin-customizer',
+	);
+
+	register_post_type( 'trousses', $args );
+}
+add_action( 'init', 'capitaine_register_post_types' ); // Le hook init lance la fonction
+
 if ( ! function_exists( 'themamourotrousse_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
